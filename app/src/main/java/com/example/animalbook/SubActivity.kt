@@ -28,7 +28,7 @@ class SubActivity : AppCompatActivity() {
             }
         }
 
-        binding.girraffeButon.setOnClickListener {
+        binding.giraffeButton.setOnClickListener {
             supportFragmentManager.beginTransaction().apply {
                 replace(R.id.container, GiraffeFragment())
                 addToBackStack(null)

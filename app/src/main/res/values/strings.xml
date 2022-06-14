@@ -4,4 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_text">フラグメント動物図鑑</string>
     <string name="next_text">次へ</string>
+    <string name="lionButton">ライオン</string>
+    <string name="hippoButton">カバ</string>
+    <string name="girrafebutton">キリン</string>
 </resources>
