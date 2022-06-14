@@ -10,7 +10,7 @@ class SubActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySubBinding.inflate(layoutInflater)
-                setContentView(binding.root)
+        setContentView(binding.root)
 
         binding.lionButton.setOnClickListener {
             supportFragmentManager.beginTransaction().apply {
@@ -36,5 +36,18 @@ class SubActivity : AppCompatActivity() {
             }
         }
 
+        title = TitleFragment()
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.titleFrame, title)
+            commit()
+        }
     }
+
+    override fun onResume() {
+        super.onResume()
+        title.setTitle("サブ画面")
+    }
+
+
+
 }

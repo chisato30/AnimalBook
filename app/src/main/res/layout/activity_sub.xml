@@ -11,6 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -24,7 +25,8 @@
         app:layout_constraintEnd_toStartOf="@+id/hippoButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/titleFrame" />
 
     <Button
         android:id="@+id/hippoButton"
@@ -34,7 +36,8 @@
         app:layout_constraintEnd_toStartOf="@+id/girraffeButon"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/lionButton"
-        app:layout_constraintTop_toTopOf="@+id/lionButton" />
+        app:layout_constraintTop_toTopOf="@+id/lionButton"
+        android:layout_below="@+id/titleFrame"/>
 
     <Button
         android:id="@+id/girraffeButon"
@@ -44,7 +47,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/hippoButton"
-        app:layout_constraintTop_toTopOf="@+id/hippoButton" />
+        app:layout_constraintTop_toTopOf="@+id/hippoButton"
+        android:layout_below="@+id/titleFrame"/>
 
     <FrameLayout
         android:id="@+id/container"
