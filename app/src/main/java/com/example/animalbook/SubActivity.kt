@@ -47,7 +47,4 @@ class SubActivity : AppCompatActivity() {
         super.onResume()
         title.setTitle("サブ画面")
     }
-
-
-
 }
